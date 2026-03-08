@@ -1,0 +1,12 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you ever add npm later)
+node_modules/
+
+# Environment files
+.env
+
+# Logs
+*.log
