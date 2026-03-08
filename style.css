@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    justify-content: space-evenly;
+    /* background-color: #d4ccc1; */
+    border-bottom: 1px solid #bfc0ac;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo {
+    /* height: 100%; */
+    width: 35%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-family: magnetlight;
+    font-weight: 300;
+    color: rgb(29, 29, 27);
+    padding-left: 0px;
+    position: relative;
+    right: 23%;
+    font-size: 14px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+    /* width: 30%; */
+}
+
+.nav-icons .credit-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: magnetlight;
+    color: rgb(112, 119, 103);
+    font-size: 14px;
+}
+
+.nav-icons .svg-icons {
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;  
+    padding: 5px;
+
+}
+
+.nav-icons .svg-icons svg{
+    border: 1px solid rgb(29, 29, 27);
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.hero 
+{
+    position: relative;
+}
+
+
+.hero img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+
+.overlay h1 {
+    font-family: magnetlight;
+    color: rgb(29, 29, 27);
+    font-size: 77.8148px;
+    font-stretch: 100%;
+    font-weight: 200;
+    padding: 50px 150px; 
+    margin-bottom: 2.5px;
+    line-height: 80px;
+}
+
+.card-section {
+    width: 100%;
+    display: flex;
+    padding-left: 150px;
+    font-family: magnetlight;
+
+}
+
+.card-section .card {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    background-color: #fffdf569;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: -10px;
+}
+
+.card-section .card .card-heading {
+    font-family: magnetlight;
+    font-size: 100%;
+    color : #1d1d1b;
+    width: 100%;
+    height: 100%;
+}
+
+.marquee {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #dfdac6;
+}
+
+.marquee img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    scale: 0.7;
+}
+
+.marquee-overlay {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 30px;
+    justify-content: center;
+}
+
+.marquee-divs  {
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.marquee-track-top   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 10px;
+    font-family: magnetlight;
+    font-size: max-content;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-track-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 10px;
+    font-family: magnetlight;
+    font-size: max-content;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-contain {
+    width: max-content;
+    gap: 50px;
+}
+
+
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+@keyframes marquee-bottom {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
+/* .marquee-track-top {
+    display: flex;
+    gap: 20px;
+    
+    font-weight: 10;
+    width: max-content;
+}
+
+.marquee-track-bottom {
+    display: flex;
+    gap: 20px;
+    
+    font-weight: 10;
+    width: max-content;
+    
+}
+
+.marquee-contanier {
+    font-family: magnetlight;
+    color: #1d1d1b;
+    /* font-stretch: 100%; 
+    overflow: hidden;
+} */
+
+
+
+
+@font-face {
+    font-family: magnetlight;
+    src: url('/Magnetik-ExtraLight.otf');
+}
